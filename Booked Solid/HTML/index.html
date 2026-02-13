@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <title>Booked Solid</title>
+        <link rel="stylesheet" href="/CSS/Styles.css">
+        <link rel="manifest" href="/manifest.json">
+        <script src="/serviceWorker.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="image/png" sizes="16x16" rel="icon" href="/Icon1.png">
+    </head>
+    <body>
+      <nav> 
+        <ul class="navbar">
+      
+          <li class="left">
+  <a href="/HTML/index.html">
+    <picture>
+      <source srcset="/Images/booked solid.webp" type="image/webp">
+      <img src="/OldImages/booked solid.png" alt="Booked Solid logo">
+    </picture>
+  </a>
+</li>
+      
+          <li class="middle">
+            <a href="/HTML/Index.html">Home</a>
+            <a href="/HTML/Contact_Us.html">Contact Us</a>
+            <a href="/HTML/Browse.html">Browse</a>
+            <a href="/HTML/PrivacyPolicy.html">Privacy Policy</a>
+
+          </li>
+      
+          <li class="right">
+            <a href="/HTML/Basket.html" alt="Basket" aria-label="shopping basket"><i class="fa-solid fa-basket-shopping fa-2xl"></i></a>
+          </li>
+      
+        </ul>
+      </nav>
+
+
+
+<div class="bg"></div>
+
+<hr class = "half">
+<hr>
+
+<div class="hero">
+    <h1>Booked Solid</h1>
+    <p>Stay booked solid with the best read</p>   
+</div>
+
+<hr>
+<hr class = "half">
+
+<div class="container">
+              <div class="card">
+                <img class="card--avatar" src="/Best Sellers.webp" alt="Best Sellers Page">
+                <h1 class="card--title">Best Sellers</h1>
+                <a class="card--link" href="/HTML/BestSellers.html">Enter</a>
+              </div>
+              
+              <div class="card">
+                <img class="card--avatar" src="/New Releases.webp" alt="New Releases Page">
+                <h1 class="card--title">New Releases</h1>
+                <a class="card--link" href="/HTML/NewReleases.html">Enter</a>
+              </div>
+              
+              <div class="card">
+                <img class="card--avatar" src="/Staff Recomendations.webp" alt="Staff Reccomendations Page">
+                <h1 class="card--title">Staff Reccomendations</h1>
+                <a class="card--link" href="/HTML/StaffReccomendations.html">Enter</a>
+              </div>
+
+              <div class="card">
+                <img class="card--avatar" src="/Out of stock.webp" alt="Out of stock Page">
+                <h1 class="card--title">Out Of Stock</h1>
+                <a class="card--link" href="/HTML/OutOfStock.html">Enter</a>
+              </div>
+            
+              </div>
+<div class = "Abouttitle">
+              <h1 class = "h1">About Us</h1>
+</div>
+
+    <div class="Aboutus">
+
+    <h3>About Us
+
+Welcome to Booked Solid, your local independent bookstore with the convenience of nationwide book delivery. We’re proud to offer the warm, personal experience of a physical bookshop while also making it easy for customers to browse, order, and enjoy books from anywhere.
+
+At our store, you’ll find a carefully curated selection of fiction, non-fiction, children’s books, bestsellers, classics, and new releases. Our friendly, knowledgeable team is always here to recommend titles and help you discover your next favourite read.
+
+To make book shopping even easier, we created the Booked Solid Progressive Web App (PWA). Our PWA lets you explore our catalogue, check availability, reserve books, and place orders for fast home delivery—all from your phone, tablet, or computer.
+
+What We Offer
+
+• A welcoming in-store browsing experience
+
+• A wide range of genres for every type of reader
+
+• Expert recommendations from staff
+
+• Convenient book shipping straight to your door
+
+• A fast, mobile-friendly PWA for browsing and ordering
+
+At Booked Solid, we’re passionate about supporting our community of readers—both in person and online. Whether you visit us in-store or shop through our PWA, we’re committed to delivering great books, great service, and a great experience.
+
+Thank you for choosing Booked Solid—your trusted local bookstore and online bookshop.</h3>
+    
+</div>
+</div>
+              
+<div class="staff-section">
+
+  <div class="staff-member">
+    <div class="staff-photo">
+      <img src = "/Images/Jake.webp" alt="CEO Jake Shaw Photo">
+    </div> 
+    <h3>Jake Edge</h3>
+    <p>CEO</p>
+  </div>
+
+  <div class="staff-member">
+    <div class="staff-photo">
+      <img src = "/Images/Cameron.webp" alt="CFO Cameron Shaw Photo">
+    </div>
+
+    <h3>Cameron Shaw</h3>
+    <p>CFO</p>
+  </div>
+
+  <div class="staff-member">
+    <div class="staff-photo">
+      <img src = "/Images/Paul.webp" alt="COO Paul Maloney Photo">
+    </div>
+    <h3>Paul Maloney</h3>
+    <p>COO</p>
+  </div>
+
+   <div class="staff-member">
+    <div class="staff-photo">
+      <img src = "/Images/Kevin.webp" alt="CKO Kevin Wilson Photo">
+    </div>
+    <h3>Kevin Wilson</h3>
+    <p>CKO</p>
+    <p>Chief 'Kevin' Officer</p>
+  </div>
+
+</div>
+
+<button id="enter">Enter Fullscreen</button>
+    <button id="exit">Exit Fullscreen</button>
+
+<h1 class = "h1"> Feel free to drop in any time</h1>
+
+
+<style>
+    #mapFrame { width: 100%; height: 450px; border: 0; }
+  </style>
+</head>
+<body>
+
+  <input id="postcodeInput" type="text" placeholder="Enter postcode">
+  <button id="goBtn">Get Directions</button>
+
+  <p id="status"></p>
+
+<iframe
+    id="mapFrame"
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"
+    allowfullscreen>
+  </iframe>
+
+  <iframe id="mapFrame" style="width:100%; height:450px; border:0;" loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+
+<script>
+  const defaultPostcode = "WA8 6JW";
+  const destination = "WA8 6JW";
+  const apiKey = "AIzaSyDAp6Ygh48F1jgYe4-b-B691uKTC2k_SXk";
+
+  function showDirections() {
+    let origin = document.getElementById("postcodeInput").value.trim();
+
+    if (!origin) {
+      origin = defaultPostcode;
+      document.getElementById("postcodeInput").value = defaultPostcode;
+    }
+
+    const url =
+      `https://www.google.com/maps/embed/v1/directions?key=${apiKey}` +
+      `&origin=${encodeURIComponent(origin)}` +
+      `&destination=${encodeURIComponent(destination)}` +
+      `&mode=driving`;
+
+    document.getElementById("mapFrame").src = url;
+  }
+
+  document.getElementById("goBtn").addEventListener("click", showDirections);
+</script>
+
+
+
+<br>
+<br>
+
+<script>
+  if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => {
+      navigator.serviceWorker.register("../serviceWorker.js")
+        .then(reg => console.log("SW registered:", reg.scope))
+        .catch(err => console.log("SW registration failed:", err));
+    });
+  }
+</script>
+
+  <script>
+    const element = document.documentElement;
+ 
+    // Enter fullscreen
+    document.getElementById("enter").addEventListener("click", () => {
+      if (element.requestFullscreen) {
+        element.requestFullscreen();
+      }
+    });
+ 
+    // Exit fullscreen
+    document.getElementById("exit").addEventListener("click", () => {
+      if (document.exitFullscreen) {
+        document.exitFullscreen();
+      }
+    });
+  </script>
+ 
+
+<footer>
+  <div class="footer">
+      <a href="Index.html">Home ¦</a>
+      <a href="Browse.html">Browse ¦</a>
+      <a href="NewReleases.html">New Releases ¦</a>
+      <a href="BestSellers.html">Best Sellers ¦</a>
+      <a href="StaffReccomendations.html">Staff Reccomendations ¦</a>
+      <a href="OutOfStock.html">Out of stock ¦</a>
+      <a href="Contact_Us.html">Contact Us ¦</a>
+      <a href="PrivacyPolicy.html">Privacy Policy</a>
+    </div>
+
+    <div class="contact-info">
+    <a href="mailto: bookedsolid@bookedsolid.co.uk"><i class="fa-solid fa-envelope"></i> Email Us: bookedsolid@bookedsolid.co.uk</a>
+    <a href="tel:+447518390500"><i class="fa-solid fa-phone"></i> Call Us: +447518390500</a>
+
+    <a href="https://www.google.com/maps/place/32+Albert+Rd,+Widnes+WA8+6JW/@53.3685986,-2.7281118,17z/data=!3m1!4b1!4m6!3m5!1s0x487b1d7844659461:0x51f3b30fdc361d8b!8m2!3d53.3685986!4d-2.7255369!16s%2Fg%2F11c2g69_t4?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D"
+        target="_blank" rel="noopener"><i class="fa-solid fa-location-dot fa-xl"></i>32 Albert Rd, Widnes WA8 6JW
+    </a>
+    </div>
+
+        <div class="socials">
+      <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook fa-2xl"></i></a>
+      <a href="https://www.twitter.com/"><i class="fa-brands fa-square-x-twitter fa-2xl"></i></a>
+      <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+    </div>
+
+    <p class="DesByJake">A product By Edge Creations</p>
+    <p class="DesByJake">© 2024 Edge Creations. All rights reserved.</p>
+  </div>
+</footer>
+
+
+       
+
+
+
+</body>
+
+</html>
