@@ -1,22 +1,78 @@
-# booked-solid-pwa
-Progressive Web App bookstore built with HTML, CSS, JavaScript, Node.js and MySQL
+# Booked Solid — Progressive Web App
 
-Booked Solid — Progressive Web App
+## Overview
 
-A full-stack bookstore Progressive Web Application built as part of my Computer Science studies.
+Booked Solid is a full-stack Progressive Web Application (PWA) bookstore built using Node.js and MySQL.  
+The application simulates a real-world e-commerce environment with persistent data storage, shopping cart functionality, and offline capability through service workers.
 
-Tech stack:
+The goal of this project was to design and implement a structured full-stack system with database integration and user-focused functionality.
+
+---
+
+## Tech Stack
+
 - HTML
 - CSS
 - JavaScript
-- Node.js
+- Node.js (Express)
 - MySQL
+- Service Workers (PWA support)
 
-Features:
+---
+
+## Key Features
+
 - Browse and search books
-- Shopping cart functionality
-- Database integration
-- CRUD operations
-- PWA support (offline capability and installable app)
+- Persistent shopping cart functionality
+- CRUD operations for book data
+- REST-style backend routes
+- MySQL relational database integration
+- Offline capability via service worker
+- Installable as a Progressive Web App
 
-This project was developed as part of my university coursework and to build full-stack development experience.
+---
+
+## Architecture
+
+- Separation of frontend and backend logic
+- Express server handling API routes
+- MySQL used for relational data storage
+- Service worker registered for offline caching
+- Modular route structure for maintainability
+
+---
+
+## Challenges & Solutions
+
+- **Maintaining cart persistence**  
+  Implemented server-side storage and session-based logic to ensure consistent cart behaviour.
+
+- **Database structure design**  
+  Designed relational schema to handle books, users, and transactions efficiently.
+
+- **Offline functionality**  
+  Implemented service worker caching strategies to support PWA installation and offline access.
+
+---
+
+## What I Learned
+
+- Structuring full-stack applications with clear separation of concerns
+- Managing relational database schemas and CRUD operations
+- Implementing Progressive Web App functionality
+- Handling client-server communication via API endpoints
+
+---
+
+## Future Improvements
+
+- User authentication system
+- Payment gateway integration
+- Admin dashboard for inventory management
+- Improved caching strategy and performance optimisation
+
+---
+
+## Screenshots
+
+(Add screenshots here)
